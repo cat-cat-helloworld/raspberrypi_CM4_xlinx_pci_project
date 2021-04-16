@@ -1,0 +1,147 @@
+[ 9440.453863] xdma:create_sys_device: create_sys_device,229
+[ 9448.621687] xdma:char_sgdma_open: char_sgdma_open,793
+[ 9448.621727] xdma:char_open: char_open,167
+[ 9448.621766] xdma:char_sgdma_open: char_sgdma_open,793
+[ 9448.621787] xdma:char_open: char_open,167
+[ 9448.621813] xdma:char_sgdma_llseek: char_sgdma_llseek,137
+[ 9448.621832] xdma:char_sgdma_llseek: char_sgdma_llseek: pos=0
+[ 9448.621871] xdma:char_sgdma_read_write: char_sgdma_read_write,361
+[ 9448.621876] xdma:xcdev_check: xcdev_check,136
+[ 9448.621904] xdma:char_sgdma_read_write: file 0x00000000fde17159, priv 0x000000004b70da1d, buf 0x000000003654a26b,4096, pos 0, W 1, 0-H2C0-MM.
+[ 9448.621940] xdma:check_transfer_align: check_transfer_align,184
+[ 9448.621945] xdma:char_sgdma_map_user_buf_to_sgl: char_sgdma_map_user_buf_to_sgl,279
+[ 9448.621983] xdma:xdma_xfer_submit: xdma_xfer_submit,3287
+[ 9448.622017] xdma:xdma_init_request: xdma_init_request,3218
+[ 9448.622037] xdma:xdma_init_request: ep 0x0, desc 1+0.
+[ 9448.622064] xdma:xdma_request_alloc: xdma_request_alloc,3196
+[ 9448.622074] xdma:xdma_request_cb_dump: request 0x00000000021cd05b, total 4096, ep 0x0, sw_desc 1, sgt 0x00000000839ea9e9.
+[ 9448.622111] xdma:sgt_dump: sgt 0x00000000839ea9e9, sgl 0x000000001ac87cc3, nents 1/1.
+[ 9448.622137] xdma:sgt_dump: 0, 0x000000001ac87cc3, pg 0x00000000f04c8c53,0+4096, dma 0x736c9000,4096.
+[ 9448.622161] xdma:xdma_request_cb_dump: 0/1, 0x736c9000, 4096.
+[ 9448.622181] xdma:xdma_xfer_submit: 0-H2C0-MM, len 4096 sg cnt 1.
+[ 9448.622200] xdma:xdma_xfer_submit: ******transfer_init******
+[ 9448.622219] xdma:transfer_init: transfer_init,3069
+[ 9448.622227] xdma:transfer_init: ********transfer_init********** engine 0-H2C0-MM pre-alloc desc: 0x00000000b855851e, desc_bus:0x1ed50000.************************
+[ 9448.622261] xdma:transfer_desc_init: transfer_desc_init,2340
+[ 9448.622266] xdma:transfer_init: xfer= 000000005dcbd4b2 transfer->desc_bus = 0x1ed50000.
+[ 9448.622292] xdma:transfer_build: transfer_build,3030
+[ 9448.622298] xdma:transfer_build: sw desc 0/1: 0x736c9000, 0x1000, ep 0x0.
+[ 9448.622320] xdma:xdma_desc_set: xdma_desc_set,2469
+[ 9448.622324] xdma:xdma_desc_control_set: xdma_desc_control_set,2427
+[ 9448.622338] xdma:xdma_get_next_adj: xdma_get_next_adj,664
+[ 9448.622354] xdma:xdma_get_next_adj: xdma_get_next_adj: remaining_desc 0, next_lo 0x0
+[ 9448.622380] xdma:transfer_init: set next adj at index 0 to 0
+[ 9448.622393] xdma:xdma_desc_adjacent: xdma_desc_adjacent,2415
+[ 9448.622401] xdma:transfer_init: ********transfer_init********** engine 0-H2C0-MM pre-alloc desc: 0x00000000b855851e, desc_bus:0x1ed50000.************************
+[ 9448.622441] xdma:xdma_xfer_submit: xfer, 4096, ep 0x1000, done 0, sg 1/1.
+[ 9448.622461] xdma:xdma_xfer_submit: xdma_xfer_submit,3391
+[ 9448.622483] xdma:transfer_dump: xfer 0x000000005dcbd4b2, state 0x0, f 0x1, dir 1, len 4096, last 1.
+[ 9448.622508] xdma:transfer_dump: transfer 0x000000005dcbd4b2, desc 1, bus 0x1ed50000, adj 1.
+[ 9448.622534] xdma:dump_desc: 0xffffffc0113d5000/0x00: 0xad4b0013 0xad4b0013 magic|extra_adjacent|control
+[ 9448.622559] xdma:dump_desc: 0xffffffc0113d5004/0x04: 0x00001000 0x00001000 bytes
+[ 9448.622583] xdma:dump_desc: 0xffffffc0113d5008/0x08: 0x736c9000 0x736c9000 src_addr_lo
+[ 9448.622607] xdma:dump_desc: 0xffffffc0113d500c/0x0c: 0x00000000 0x00000000 src_addr_hi
+[ 9448.622629] xdma:dump_desc: 0xffffffc0113d5010/0x00: 0x00000000 0x00000000 dst_addr_lo
+[ 9448.622652] xdma:dump_desc: 0xffffffc0113d5014/0x04: 0x00000000 0x00000000 dst_addr_hi
+[ 9448.622675] xdma:dump_desc: 0xffffffc0113d5018/0x08: 0x00000000 0x00000000 next_addr
+[ 9448.622698] xdma:dump_desc: 0xffffffc0113d501c/0x0c: 0x00000000 0x00000000 next_addr_pad
+[ 9448.622719] xdma:dump_desc: 
+[ 9448.622736] xdma:transfer_queue: transfer_queue,2540
+[ 9448.622741] xdma:transfer_queue: transfer_queue (transfer=0x000000005dcbd4b2).
+[ 9448.622774] xdma:transfer_queue: transfer_queue(): starting 0-H2C0-MM engine.
+[ 9448.622789] xdma:engine_start: engine_start,699
+[ 9448.622794] xdma:engine_start: engine_start(0-H2C0-MM): transfer=0x000000005dcbd4b2.
+[ 9448.622819] xdma:engine_start: ********************************************* 
+[ 9448.622823] xdma:engine_start: iowrite32(0x1ed50000 to 0x000000007c8df697) (first_desc_lo)
+[ 9448.622852] xdma:__write_register: engine_start: w reg 0x3f9e8cfc18(0x000000007c8df697), 0x1ed50000.
+[ 9448.622871] xdma:engine_start: iowrite32(0x00000000 to 0x00000000e4997b6b) (first_desc_hi)
+[ 9448.622891] xdma:__write_register: engine_start: w reg 0x3f9e8cfc1c(0x00000000e4997b6b), 0x0.
+[ 9448.622910] xdma:engine_start: ****************** engine 0-H2C0-MM pre-alloc desc: 0x00000000b855851e, desc_bus:0x1ed50000.************************
+[ 9448.622931] xdma:engine_start: ********************************************* 
+[ 9448.622934] xdma:xdma_get_next_adj: xdma_get_next_adj,664
+[ 9448.622950] xdma:xdma_get_next_adj: xdma_get_next_adj: remaining_desc 1, next_lo 0x1ed50000
+[ 9448.622977] xdma:engine_start: iowrite32(0x00000000 to 0x00000000b33f25f5) (first_desc_adjacent)
+[ 9448.622996] xdma:__write_register: engine_start: w reg 0x3f9e8cfc20(0x00000000b33f25f5), 0x0.
+[ 9448.623014] xdma:engine_start: ioread32(0x000000003eec323a) (dummy read flushes writes).
+[ 9448.623031] xdma:engine_start_mode_config: engine_start_mode_config,589
+[ 9448.623036] xdma:engine_start_mode_config: iowrite32(0x00f83e1f to 0x00000000e6851e6d) (control)
+[ 9448.623064] xdma:__write_register: engine_start_mode_config: w reg 0x3f9e8cbba4(0x00000000e6851e6d), 0xf83e1f.
+[ 9448.623086] xdma:engine_start_mode_config: ********************ioread32(0x000000003eec323a) = 0x00000001 (dummy read flushes writes).
+[ 9448.623098] xdma:xdma_isr: xdma_isr,1427
+[ 9448.623105] xdma:xdma_isr: (irq=44, dev 0x00000000e283f8f8) <<<< ISR.
+[ 9448.623112] xdma:xdma_isr: ch_irq = 0x00000001
+[ 9448.623117] xdma:channel_interrupts_disable: channel_interrupts_disable,263
+[ 9448.623124] xdma:__write_register: channel_interrupts_disable: w reg 0x2000(0x00000000476001e1), 0x1.
+[ 9448.623130] xdma:xdma_isr: user_irq = 0x00000000
+[ 9448.623138] xdma:engine_status_read: engine_status_read,510
+[ 9448.623145] xdma:engine_status_read:  ***************************************** 0-H2C0-MM: ioread32(0x000000003eec323a) = 0x00100010 (status).
+[ 9448.623154] xdma:xdma_isr: ****************************iterate over H2C (PCIe read)
+[ 9448.623158] xdma:xdma_isr: schedule_work, 0-H2C0-MM.
+[ 9448.623171] xdma:engine_start: 0-H2C0-MM engine 0x00000000d156f9c1 now running
+[ 9448.623218] xdma:engine_service_work: engine_service_work,1261
+[ 9448.623244] xdma:transfer_queue: transfer=0x000000005dcbd4b2 started 0-H2C0-MM engine with transfer 0x000000005dcbd4b2.
+[ 9448.623272] xdma:transfer_queue: engine->running = 1
+[ 9448.623288] xdma:engine_service_work: engine_service() for 0-H2C0-MM engine 00000000d156f9c1
+[ 9448.623290] xdma:xdma_xfer_submit: ******transfer_queue******
+
+[ 9448.623310] xdma:engine_service: engine_service,1152
+[ 9448.623315] xdma:engine_service: line:1153,desc_count:0
+[ 9448.623337] xdma:engine_status_read: engine_status_read,510
+[ 9448.623355] xdma:engine_status_read:  ***************************************** 0-H2C0-MM: ioread32(0x000000003eec323a) = 0x00100010 (status).
+[ 9448.623387] xdma:engine_service: line:1182,desc_count:0
+[ 9448.623390] xdma:engine_service_shutdown: engine_service_shutdown,828
+[ 9448.623404] xdma:engine_service_shutdown: engine just went idle, resetting RUN_STOP.
+[ 9448.623430] xdma:xdma_engine_stop: xdma_engine_stop,549
+[ 9448.623434] xdma:xdma_engine_stop: xdma_engine_stop(engine=00000000d156f9c1)
+[ 9448.623459] xdma:xdma_engine_stop: Stopping SG DMA 0-H2C0-MM engine; writing 0x00f83e1e to 0x00000000e6851e6d.
+[ 9448.623480] xdma:__write_register: xdma_engine_stop: w reg 0x3f9e8cbba4(0x00000000e6851e6d), 0xf83e1e.
+[ 9448.623498] xdma:xdma_engine_stop: xdma_engine_stop(0-H2C0-MM) done
+[ 9448.623514] xdma:engine_service: line:1196,desc_count:0 
+[ 9448.623520] xdma:engine_service: engine->name 0-H2C0-MM wb 0x0, desc_count 0, err 0, dequeued 0.
+[ 9448.623547] xdma:channel_interrupts_enable: channel_interrupts_enable,252
+[ 9448.623552] xdma:__write_register: channel_interrupts_enable: w reg 0x2000(0x00000000498c0224), 0x1.
+[ 9458.655958] xdma:xdma_xfer_submit: ********************************start the engine*********** xfer->state:1 
+[ 9458.655996] xdma:xdma_xfer_submit: ******default******
+[ 9458.656017] xdma:xdma_xfer_submit: xfer 0x000000005dcbd4b2,4096, s 0x1 timed out, ep 0x1000.
+[ 9458.656037] xdma:engine_status_read: engine_status_read,510
+[ 9458.656046] xdma:engine_status_read:  ***************************************** 0-H2C0-MM: ioread32(0x000000003eec323a) = 0x00000000 (status).
+[ 9458.656076] xdma:engine_reg_dump: engine_reg_dump,370
+[ 9458.656083] xdma:engine_reg_dump: 0-H2C0-MM: ioread32(0x000000004f48aac6) = 0x1fc00006 (id).
+[ 9458.656113] xdma:engine_reg_dump: 0-H2C0-MM: ioread32(0x000000003eec323a) = 0x00000000 (status).
+[ 9458.656134] xdma:engine_reg_dump: 0-H2C0-MM: ioread32(0x00000000e6851e6d) = 0x00f83e1e (control)
+[ 9458.656155] xdma:engine_reg_dump: 0-H2C0-MM: ioread32(0x000000007c8df697) = 0x1ed50000 (first_desc_lo)
+[ 9458.656176] xdma:engine_reg_dump: 0-H2C0-MM: ioread32(0x00000000e4997b6b) = 0x00000000 (first_desc_hi)
+[ 9458.656196] xdma:engine_reg_dump: 0-H2C0-MM: ioread32(0x00000000b33f25f5) = 0x00000000 (first_desc_adjacent).
+[ 9458.656218] xdma:engine_reg_dump: 0-H2C0-MM: ioread32(0x00000000a66b460c) = 0x00000000 (completed_desc_count).
+[ 9458.656239] xdma:engine_reg_dump: 0-H2C0-MM: ioread32(0x0000000074390404) = 0x00f83e1e (interrupt_enable_mask)
+[ 9458.656259] xdma:engine_status_dump: engine_status_dump,415
+[ 9458.656266] xdma:engine_status_dump: SG engine 0-H2C0-MM status: 0x00000000:
+[ 9458.656290] xdma:xdma_xfer_submit: xdma_xfer_submit,3464
+[ 9458.656304] xdma:transfer_abort: transfer_abort,2495
+[ 9458.656310] xdma:transfer_abort: abort transfer 0x000000005dcbd4b2, desc 1, engine desc queued 0.
+[ 9458.656336] xdma:xdma_engine_stop: xdma_engine_stop,549
+[ 9458.656340] xdma:xdma_engine_stop: xdma_engine_stop(engine=00000000d156f9c1)
+[ 9458.656366] xdma:xdma_engine_stop: Stopping SG DMA 0-H2C0-MM engine; writing 0x00f83e1e to 0x00000000e6851e6d.
+[ 9458.656387] xdma:__write_register: xdma_engine_stop: w reg 0x3f9e8cbba4(0x00000000e6851e6d), 0xf83e1e.
+[ 9458.656406] xdma:xdma_engine_stop: xdma_engine_stop(0-H2C0-MM) done
+[ 9458.656423] xdma:xdma_xfer_submit: xdma_xfer_submit,3477
+[ 9458.656445] xdma:transfer_dump: xfer 0x000000005dcbd4b2, state 0x4, f 0x1, dir 1, len 4096, last 1.
+[ 9458.656470] xdma:transfer_dump: transfer 0x000000005dcbd4b2, desc 1, bus 0x1ed50000, adj 1.
+[ 9458.656496] xdma:dump_desc: 0xffffffc0113d5000/0x00: 0xad4b0013 0xad4b0013 magic|extra_adjacent|control
+[ 9458.656522] xdma:dump_desc: 0xffffffc0113d5004/0x04: 0x00001000 0x00001000 bytes
+[ 9458.656545] xdma:dump_desc: 0xffffffc0113d5008/0x08: 0x736c9000 0x736c9000 src_addr_lo
+[ 9458.656569] xdma:dump_desc: 0xffffffc0113d500c/0x0c: 0x00000000 0x00000000 src_addr_hi
+[ 9458.656593] xdma:dump_desc: 0xffffffc0113d5010/0x00: 0x00000000 0x00000000 dst_addr_lo
+[ 9458.656616] xdma:dump_desc: 0xffffffc0113d5014/0x04: 0x00000000 0x00000000 dst_addr_hi
+[ 9458.656639] xdma:dump_desc: 0xffffffc0113d5018/0x08: 0x00000000 0x00000000 next_addr
+[ 9458.656662] xdma:dump_desc: 0xffffffc0113d501c/0x0c: 0x00000000 0x00000000 next_addr_pad
+[ 9458.656683] xdma:dump_desc: 
+[ 9458.656701] xdma:sgt_dump: sgt 0x00000000839ea9e9, sgl 0x000000001ac87cc3, nents 1/1.
+[ 9458.656727] xdma:sgt_dump: 0, 0x000000001ac87cc3, pg 0x00000000f04c8c53,0+4096, dma 0x736c9000,4096.
+[ 9458.656751] xdma:transfer_destroy: transfer_destroy,3011
+[ 9458.656755] xdma:xdma_desc_done: xdma_desc_done,2451
+[ 9458.656776] xdma:xdma_request_free: xdma_request_free,3186
+[ 9458.656797] xdma:char_sgdma_unmap_user_buf: char_sgdma_unmap_user_buf,253
+[ 9458.656923] xdma:char_sgdma_close: char_sgdma_close,815
+[ 9458.656946] xdma:xcdev_check: xcdev_check,136
+[ 9458.656984] xdma:char_sgdma_close: char_sgdma_close,815
