@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-2" LaunchTime="1552440673">
+  <File Type="ROUTE-PWR" Name="PCIe_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="PCIe_wrapper.tcl"/>
+  <File Type="PWROPT-DCP" Name="PCIe_wrapper_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="PCIe_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="PCIe_wrapper_reports.tcl"/>
+  <File Type="BG-DRC" Name="PCIe_wrapper.drc"/>
+  <File Type="OPT-HWDEF" Name="PCIe_wrapper.hwdef"/>
+  <File Type="OPT-DCP" Name="PCIe_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="PCIe_wrapper_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="PCIe_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="PCIe_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="PCIe_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PCIe_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="PCIe_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PCIe_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PCIe_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="PCIe_wrapper_physopt.dcp"/>
+  <File Type="BG-BIT" Name="PCIe_wrapper.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PCIe_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="PCIe_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PCIe_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="PCIe_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PCIe_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="PCIe_wrapper_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="PCIe_wrapper.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PCIe_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="PCIe_wrapper.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PCIe_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="PCIe_wrapper.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PCIe_wrapper_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="PCIe_wrapper.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="PCIe_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="PCIe_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PCIe_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PCIe_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="PCIe_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PCIe_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="PCIe_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="PCIe_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PCIe_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PCIe_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="PCIe_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="PCIe_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="PCIe_wrapper.mmi"/>
+  <File Type="BITSTR-LTX" Name="PCIe_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="PCIe_wrapper.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/PCIe/PCIe.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/PCIe/hdl/PCIe_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/PCIe/ip/PCIe_mig_7series_0_0/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="PCIe_mig_7series_0_0"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/PCIe/ip/PCIe_mig_7series_0_0/mig_b.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="PCIe_mig_7series_0_0"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PCIe_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/PCIe.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

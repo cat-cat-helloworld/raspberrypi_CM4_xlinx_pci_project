@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 12 10:37:14 2019
+# Process ID: 10396
+# Current directory: D:/demo_ax7103/24_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.runs/impl_1
+# Command line: vivado.exe -log PCIe_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PCIe_wrapper.tcl -notrace
+# Log file: D:/demo_ax7103/24_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.runs/impl_1/PCIe_wrapper.vdi
+# Journal file: D:/demo_ax7103/24_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source PCIe_wrapper.tcl -notrace

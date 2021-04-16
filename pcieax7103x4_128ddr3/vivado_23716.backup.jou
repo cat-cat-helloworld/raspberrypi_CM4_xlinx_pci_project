@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jan  3 16:22:29 2018
+# Process ID: 23716
+# Current directory: D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23592 D:\demo_AX7103\18_PCIE_test\FPGA\pcieax7103x4_128ddr3\PCIe.xpr
+# Log file: D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/vivado.log
+# Journal file: D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.srcs/sources_1/bd/PCIe/PCIe.bd}
+open_bd_design {D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.srcs/sources_1/bd/PCIe/PCIe.bd}
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {PCIe_xdma_0_1 PCIe_axi_interconnect_0_1 PCIe_rst_mig_7series_0_100M_0 PCIe_clk_wiz_0_0 PCIe_util_ds_buf_0_0 PCIe_mig_7series_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {PCIe_xdma_0_1 PCIe_axi_interconnect_0_1 PCIe_rst_mig_7series_0_100M_0 PCIe_clk_wiz_0_0 PCIe_util_ds_buf_0_0 PCIe_mig_7series_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.srcs/sources_1/bd/PCIe/PCIe.bd]
+catch { config_ip_cache -export [get_ips -all PCIe_util_ds_buf_0_0] }
+catch { config_ip_cache -export [get_ips -all PCIe_xdma_0_1] }
+catch { config_ip_cache -export [get_ips -all PCIe_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all PCIe_mig_7series_0_0] }
+catch { config_ip_cache -export [get_ips -all PCIe_rst_mig_7series_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all PCIe_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all PCIe_auto_cc_0] }
+export_ip_user_files -of_objects [get_files D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.srcs/sources_1/bd/PCIe/PCIe.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.srcs/sources_1/bd/PCIe/PCIe.bd]
+launch_runs -jobs 4 {PCIe_util_ds_buf_0_0_synth_1 PCIe_xdma_0_1_synth_1 PCIe_clk_wiz_0_0_synth_1 PCIe_mig_7series_0_0_synth_1 PCIe_rst_mig_7series_0_100M_0_synth_1 PCIe_auto_us_0_synth_1 PCIe_auto_cc_0_synth_1}
+export_simulation -of_objects [get_files D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.srcs/sources_1/bd/PCIe/PCIe.bd] -directory D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.ip_user_files/sim_scripts -ip_user_files_dir D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.ip_user_files -ipstatic_source_dir D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.cache/compile_simlib/modelsim} {questa=D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.cache/compile_simlib/questa} {riviera=D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.cache/compile_simlib/riviera} {activehdl=D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1

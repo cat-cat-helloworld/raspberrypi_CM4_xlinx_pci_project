@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jan  5 13:32:02 2018
+# Process ID: 4196
+# Current directory: D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1856 D:\demo_AX7103\18_PCIE_test\FPGA\pcieax7103x4_128ddr3\PCIe.xpr
+# Log file: D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/vivado.log
+# Journal file: D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/demo_AX7103/18_PCIE_test/FPGA/pcieax7103x4_128ddr3/PCIe.xpr
+update_compile_order -fileset sources_1
